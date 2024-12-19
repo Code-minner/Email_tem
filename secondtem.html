@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Connection Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        :root {
+            --primary_color: #ffffff;
+            --secondary_color: #000000;
+            --tertiary_color: #CA0928;
+            --foundation_white: #F4F4F4;
+            --text_color: #667185;
+            --light_gray: rgba(190, 186, 186, 0.212);
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pattern-container {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEjXiLOArHe-m4zPtrP1WMOPn8Qvc9ZwvUyeo8OerVpwIdneG1UC9YXCEaacXbAeHJGc-OG7amddFeUOxjJQdxsG9ET039swmAD-j9NR8hNO9XN0QdCou2ZTRuk1jMSyBBb8koliPjga6oZqYJglGUHA5YoJnqfhskh6OkeXOd0AWOzKjmL9bLLD9zdb74s');
+            background-repeat: repeat;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: var(--primary_color);
+            border-radius: 0px;
+            overflow: hidden;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 3rem;
+        }
+
+        .content_sub {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            position: relative;
+        }
+
+        .head_section {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 1rem 0;
+            position: relative;
+            background-position: bottom;
+            background-size: contain;
+            background: url("https://blogger.googleusercontent.com/img/a/AVvXsEhv57-RZcPrYzDMJ_Oc04r5YfP92xUsYjzrTxG81XzG9Ax_zShdaMLuknc7FwIlikkRke9sPVceG3qsT9_F0_1MKLV-N0WjFUGDGLY_Afo4aZkgCSDev8Uf2UPuWbTZrPTFbhRkUcOyxMy6yCIY-If-PU2ivQeXNvboYaScgNyip8By8HK0rf_U9xQ1aKs");
+        }
+
+        .head_section_sub {
+            width: 100%;
+            height: 100%;
+          
+        }
+
+        .logo_section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        P {
+            text-align: justify;
+        }
+
+        .logo_section_img {
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+            display: inline-flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+        
+        }
+
+        .logo_section_img img {
+            width: 50px;
+        }
+
+        .logo_section_img h1 {
+            color: var(--primary_color);
+            font-size: 2em;
+            margin-left: -4px;
+            font-weight: 500;
+        }
+
+        .logo_section_text {
+            font-size: 1em;
+            color: var(--primary_color);
+            font-weight: 600;
+            display: block;
+            position: relative;
+            top: -10px;
+            margin-left: 7px;
+        }
+
+        .head_section_sub img {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .head_section_img {
+            width: 40%;
+            height: 100%;
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .head_section_img img {
+            width: 100%;
+        }
+
+        .head_section_sub img {
+            width: auto;
+            height: 100%;
+            object-fit: scale-down;
+            padding-top: 20px;
+        }
+
+        .head_section_img svg {
+            width: 15%;
+            position: absolute;
+            bottom: 0;
+            right: 23%;
+
+        }
+
+        .plugs img {
+            width: 30.1px;
+            height: 30.1px;
+            position: absolute;
+        }
+
+        .plugs img:nth-child(1) {
+            top: 35%;
+            left: 4%;
+            rotate: 95deg;
+        }
+
+        .plugs img:nth-child(2) {
+            top: 60%;
+            right: 3%;
+        }
+
+        .linear_gradient {
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            top: -0%;
+            rotate: -2deg;
+            right: -25%;
+        }
+
+        .linear_gradient img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .linear_gradient_2 {
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            top: -10%;
+            rotate: -85deg;
+            left: -25%;
+        }
+
+        .linear_gradient_2 img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .text_section {
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .text_section_sub {
+            justify-content: start;
+            width: auto;
+            height: 100%;
+            padding: 0rem 2rem 3rem;
+            align-items: start;
+            flex-direction: column;
+        }
+
+        .text_section_sub h2 {
+            font-size: 1.4em;
+            font-weight: 700;
+            display: inline;
+            color: var(--secondary_color);
+        }
+
+        .text_section_sub p {
+            font-size: .9em;
+            font-weight: 400;
+            color: var(--secondary_color);
+            letter-spacing: 1.2px;
+            line-height: 1.2;
+        }
+
+        .text_section_sub ol {
+            padding: 0 1.5rem;
+
+        }
+
+        .text_section_sub ol li {
+            font-size: .9em;
+            font-weight: 400;
+            color: var(--secondary_color);
+            letter-spacing: 1.2px;
+            line-height: 1.2;
+        }
+
+        .text_section_sub span {
+            font-size: .9em;
+            font-weight: 400;
+            color: var(--secondary_color);
+            letter-spacing: 1.2px;
+            display: block;
+        }
+
+        footer {
+            width: auto;
+            background-color: var(--foundation_white);
+            padding: 1rem 2rem 3px;
+            text-align: center;
+        }
+
+        .footer_sub ul {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 25px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer_sub ul li a {
+            width: 30px;
+            height: 30px;
+            font-size: 1.5em;
+            background-color: var(--tertiary_color);
+            border-radius: 100%;
+            color: var(--primary_color);
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .private_policy {
+            padding-top: 0rem;
+        }
+
+        .private_policy p {
+            font-family: Nunito;
+            font-size: .9em;
+            font-weight: 700;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+        }
+
+        .footer_text {}
+
+        .footer_text p {
+            text-align: center;
+            font-size: .8em;
+            font-weight: 600;
+            color: var(--text_color);
+            letter-spacing: .1px;
+            line-height: 1.2;
+        }
+
+        .footer_text p:nth-child(2) {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        .footer_text p a {
+            text-decoration: none;
+            color: var(--tertiary_color);
+            font-size: 1.4;
+        }
+
+        .footer_text p:last-child {
+            width: 50%;
+            margin: auto;
+        }
+
+        .download_buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            /* Adds space between the buttons */
+            margin: 20px 0;
+            flex-wrap: wrap;
+            /* Allows buttons to stack on smaller screens */
+        }
+
+        .play-store-button img,
+        .app-store-button img {
+            height: auto;
+            /* Maintain aspect ratio */
+            width: 100%;
+            /* Make the image responsive within its container */
+            width: 140px;
+            /* Set a reasonable maximum width */
+            transition: transform 0.3s ease;
+        }
+
+        .play-store-button img {
+            width: 155px;
+        }
+
+        .play-store-button img:hover,
+        .app-store-button img:hover {
+            transform: scale(1.05);
+            /* Subtle hover effect */
+        }
+
+        @media (max-width:500px) {
+
+            .logo_section {}
+
+            .logo_section_img h1 {
+                font-size: 1.8em;
+
+            }
+
+
+            .head_section_sub svg:nth-child(1) {
+                width: 100%;
+            }
+
+
+            .footer_text p:last-child {
+                width: 80%;
+
+            }
+
+            .plugs img:nth-child(2) {
+                top: 60%;
+                right: 1%;
+            }
+
+        }
+
+        @media (max-width:450px) {
+            .logo_section {
+                top: 3px;
+            }
+
+            .head_section_sub {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .logo_section_img img {
+                width: 35px;
+            }
+
+            .logo_section_img h1 {
+                font-size: 1.2em;
+            }
+
+            .logo_section_text {
+                font-size: .6em;
+            }
+
+            .play-store-button img,
+            .app-store-button img {
+                max-width: 115px;
+                /* Reduce max-width for small devices */
+            }
+
+            play-store-button img {
+            width: 130px;
+            }
+        
+        }
+
+        @media (max-width:400px) {
+
+            .plugs img:nth-child(1) {
+                top: 32%;
+                left: -1%;
+            }
+
+            .plugs img:nth-child(2) {
+                top: 60%;
+                right: 1%;
+            }
+
+        }
+
+        @media (max-width:300px) {
+
+            .logo_section {
+                top: -11px;
+            }
+
+            .head_section_sub {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .logo_section_img img {
+                width: 30px;
+            }
+
+            .logo_section_img h1 {
+                font-size: 1.5em;
+            }
+
+            .logo_section_text {
+                font-size: .7em;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container pattern-container">
+
+        <div class="content">
+
+            <div class="content_sub">
+
+                <div class="head_section">
+
+                    <div class="logo_section">
+
+
+                        <div class="logo_section_img">
+
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiZeNDhhvJfDyhQQMk4EatWar3OxbqT03uU127uJVNh8Ir_FhoxMODlvq5hPqpq3HnwK4KRCgrvveklv5mTFMOrtjsgdp-DDZGKeb2t774myR-7V_Hxix0ckW-lFY5WXx5I0QusQsA1AOJmR_c5wlfG0rO86bTOijfppFHrPV_Ef3nZb6M6i4zMOTZP2CQ"
+                                alt="Company Logo">
+                            <h1>Prosplug</h1>
+
+
+                        </div>
+
+                        <span class="logo_section_text">
+                            #1 Plug for finding skilled tradespeople
+                        </span>
+
+                    </div>
+
+                    <div class="head_section_sub">
+                        <div class="linear_gradient">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEji8_Io4MY04IbpQ44I4MSR5LCuLsSxUNBt5f2B_7CvGvaf1OwAuhpFwqEd_IpkzFzK6gpWyT_4ZZj59vh9hwCnU8RzSjC-Oqi-6p29cs611JC_neu4TOcAYlJd3aKpB5kI2jKcy30gkRpfTLP-VQPG1ZGT4R3ZHDRojz-beY-weisS7QXdjoTwzUuKU_I"
+                                alt="">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEji8_Io4MY04IbpQ44I4MSR5LCuLsSxUNBt5f2B_7CvGvaf1OwAuhpFwqEd_IpkzFzK6gpWyT_4ZZj59vh9hwCnU8RzSjC-Oqi-6p29cs611JC_neu4TOcAYlJd3aKpB5kI2jKcy30gkRpfTLP-VQPG1ZGT4R3ZHDRojz-beY-weisS7QXdjoTwzUuKU_I"
+                                alt="">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEji8_Io4MY04IbpQ44I4MSR5LCuLsSxUNBt5f2B_7CvGvaf1OwAuhpFwqEd_IpkzFzK6gpWyT_4ZZj59vh9hwCnU8RzSjC-Oqi-6p29cs611JC_neu4TOcAYlJd3aKpB5kI2jKcy30gkRpfTLP-VQPG1ZGT4R3ZHDRojz-beY-weisS7QXdjoTwzUuKU_I"
+                                alt="">
+                        </div>
+
+                        <div class="linear_gradient_2">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEji8_Io4MY04IbpQ44I4MSR5LCuLsSxUNBt5f2B_7CvGvaf1OwAuhpFwqEd_IpkzFzK6gpWyT_4ZZj59vh9hwCnU8RzSjC-Oqi-6p29cs611JC_neu4TOcAYlJd3aKpB5kI2jKcy30gkRpfTLP-VQPG1ZGT4R3ZHDRojz-beY-weisS7QXdjoTwzUuKU_I"
+                                alt="">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEji8_Io4MY04IbpQ44I4MSR5LCuLsSxUNBt5f2B_7CvGvaf1OwAuhpFwqEd_IpkzFzK6gpWyT_4ZZj59vh9hwCnU8RzSjC-Oqi-6p29cs611JC_neu4TOcAYlJd3aKpB5kI2jKcy30gkRpfTLP-VQPG1ZGT4R3ZHDRojz-beY-weisS7QXdjoTwzUuKU_I"
+                                alt="">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEji8_Io4MY04IbpQ44I4MSR5LCuLsSxUNBt5f2B_7CvGvaf1OwAuhpFwqEd_IpkzFzK6gpWyT_4ZZj59vh9hwCnU8RzSjC-Oqi-6p29cs611JC_neu4TOcAYlJd3aKpB5kI2jKcy30gkRpfTLP-VQPG1ZGT4R3ZHDRojz-beY-weisS7QXdjoTwzUuKU_I"
+                                alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="plugs">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjNXWE-IigtUkiT4iGo3aexMIeH9CwnNhwIpX5RFu7nAlOS2r9gamTdEuXG62dzUoMEuBPTOhGPCzF91ImiTofH8a56iUUjqJQAWbt-NV2BpTluYGHYk2KJ8Pc3d7HEKS_e7AjjcrqsRU1_pfn1xTPQ2mrnz80Kh32QbQtxZUmOQZMztXbh7zVyyZ-1wxw"
+                            alt="">
+
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjNXWE-IigtUkiT4iGo3aexMIeH9CwnNhwIpX5RFu7nAlOS2r9gamTdEuXG62dzUoMEuBPTOhGPCzF91ImiTofH8a56iUUjqJQAWbt-NV2BpTluYGHYk2KJ8Pc3d7HEKS_e7AjjcrqsRU1_pfn1xTPQ2mrnz80Kh32QbQtxZUmOQZMztXbh7zVyyZ-1wxw"
+                            alt="">
+                    </div>
+
+                </div>
+
+                <div class="head_section_img">
+                    <img src="https://s3-alpha-sig.figma.com/img/b8c2/88d8/93209fd0daa950a4c041b008ff69631e?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lAkM8mG-4An4jp~Ulbbqsd~7p2R~o543N~B2ghMz~ee7obToxECBX2Mhj-G7oSBrFZfQwgNAHE3KQwza7fsjnwyxi~~rff77uq04Xzth-J5L7gUFY1VIcCdkYNFMlg3yFV718UqZq7QehOoxWXIQbH1k57N3jLaW9ZRJQBxqhpSWt6NZ4Ecf9SIGhYY8WQioL2k1bZsp004vn5QBqpaxAwXu7bOBLOmfI~XDSEZFEMm3G5hRH0rvKVnI7YXwI9Y50Ym82gbBZ~cwmnkq6sM5Qi477rM5H~fYGa~e-m7~7Hrixof6M2WEkmH0Yt5ETl4QdBi0qTyyUyuKXbQ8JfN5Bg__"
+                        alt="">
+
+
+
+                </div>
+
+                <div class="text_section">
+
+                    <div class="text_section_sub">
+                        <h2>Welcome John Doe,</h2>
+
+                        <p>We’re thrilled to have you on board at Prosplug, we’re commited to helping you grow your
+                            business by connecting you with clients who need your expertise. from managing your services
+                            to tracking payments, our platform is desiged to make your journey smooth and rewarding.</p>
+
+                        <p>Here’s how to get started:</p>
+
+                        <ol>
+                            <li>Complete your profile to attract more clients.</li>
+                            <li>Add your services and set your pricing.</li>
+                            <li>Explore the dashboard for tools to manage orders and earnings.</li>
+                        </ol>
+
+                        <p>If you have any questions we’re just a click away at [Support@Prosplug.com] Lets achieve
+                            great things together!</p>
+
+                        <div>
+                            <span>cheers</span>
+                            <span>The Prosplug Team</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <footer>
+
+                    <div class="footer_sub">
+
+                        <ul>
+                            <li>
+                                <a href="https://x.com/afrika_math?t=6odoFbI6JoDjEAoCxUEKZQ&s=08"><i
+                                        class='bx bxl-twitter'></i></a>
+                            </li>
+
+                            <li>
+
+                                <a href="https://youtube.com/@mathsmagic-a?si=dEvQrQA_d09TDVGA"><i
+                                        class='bx bxl-facebook'></i></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/fagbenro-timileyin-528b5b1b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                        class='bx bxl-linkedin'></i></a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://www.instagram.com/afrika_kunmi?igsh=OThlNmJ2MHBiNWx0"
+                                    target="_blank"><i class='bx bxl-instagram'></i></a>
+                            </li>
+
+                        </ul>
+
+                        <div class="private_policy">
+                            <p>Privacy Policy Support | Search us on all socials | Get inspired clients</p>
+                        </div>
+
+                        <div class="footer_text">
+                            <p>This email was sent to you by Prosplug Ltd.</p>
+
+                            <p> you are receiving this email because you sign up for Prosplug
+                                If you wish to unsubscribe from all future emails, please click
+                                <a href="#">Here</a>
+                            </p>
+
+                            <p>Prosplug Ltd. | No 6 Awolowo str | Lagos Nigeria </p>
+
+                        </div>
+
+
+                        <div class="download_buttons">
+                            <a href="https://play.google.com/store" class="play-store-button" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play">
+                            </a>
+                            <a href="https://www.apple.com/app-store/" class="app-store-button" target="_blank">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                            </a>
+                        </div>
+                        
+
+                    </div>
+
+                </footer>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
