@@ -132,11 +132,11 @@
             position: absolute;
             top: -15%;
             rotate: -2deg;
-            right: -55%;
+            right: -45%;
         }
 
         .linear_gradient img {
-            width: 100%;
+            width: 50%;
             height: 100%;
             position: absolute;
         }
@@ -145,8 +145,8 @@
             width: 100%;
             height: 70%;
             position: absolute;
-            top: -65%;
-            rotate: -75deg;
+            top: -45%;
+            rotate: -55deg;
             left: -25%;
         }
 
@@ -169,12 +169,13 @@
             justify-content: center;
         }
 
-        .head_section_sub img {
+        .head_section_img img {
             width: 40%;
             height: 100%;
             object-fit: contain;
             padding-top: 20px;
         }
+
 
         .head_section_img svg {
             width: 15%;
@@ -182,6 +183,40 @@
             bottom: 0;
             right: 23%;
 
+        }
+
+        .plugers {
+            width: 50px;
+            position: absolute;
+            rotate: 90deg;
+            left: 3px;
+            top: 61%;
+            opacity: .4;
+            animation: blink 2s infinite;
+        }
+
+        .plugers2 {
+            right: 0px;
+            bottom: 0%;
+            width: 50px;
+            position: absolute;
+            rotate: -90deg;
+            opacity: .4;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: .4;
+            }
+
+            50% {
+                opacity: .8;
+            }
+
+            100% {
+                opacity: .4;
+            }
         }
 
         .plugs img {
@@ -193,6 +228,7 @@
         .plugs img:nth-child(1) {
             top: 35%;
             left: 4%;
+            rotate: 75deg;
         }
 
         .plugs img:nth-child(2) {
@@ -229,17 +265,39 @@
             letter-spacing: 1.2px;
         }
 
-        .text_section_sub ol {
-            padding: 0 1.5rem;
+        .text_section_sub ul {
+            padding: 0rem;
 
         }
 
-        .text_section_sub ol li {
+        .text_section_sub ul li {
             font-size: .9em;
             font-weight: 400;
+            list-style: none;
             color: var(--secondary_color);
             letter-spacing: 1.2px;
             line-height: 1.4;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .text_section_sub ul li span {
+            font-size: 1.2em;
+            font-weight: 900;
+            color: var(--tertiary_color);
+        }
+
+        .text_section_sub ul li:nth-child(1) span {
+            rotate: 20deg;
+        }
+
+        .text_section_sub ul li:nth-child(2) span {
+            rotate: -20deg;
+        }
+
+        .text_section_sub ul li:nth-child(3) span {
+            rotate: 20deg;
         }
 
         .text_section_sub span {
@@ -277,7 +335,40 @@
             text-decoration: none;
             align-items: center;
             justify-content: center;
+            animation: float 2s infinite ease-in-out;
         }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Staggered delays for each item */
+        .footer_sub ul li:nth-child(1) a {
+            animation-delay: 0s;
+        }
+
+        .footer_sub ul li:nth-child(2) a {
+            animation-delay: 0.5s;
+        }
+
+        .footer_sub ul li:nth-child(3) a {
+            animation-delay: 1s;
+        }
+
+        .footer_sub ul li:nth-child(4) a {
+            animation-delay: 1.5s;
+        }
+
 
         .private_policy {
             padding-top: 0rem;
@@ -411,9 +502,9 @@
             }
 
             play-store-button img {
-            width: 130px;
+                width: 130px;
             }
-        
+
         }
 
         @media (max-width:400px) {
@@ -520,7 +611,7 @@
                         </div>
 
                         <div class="head_section_img">
-                            <img src="https://s3-alpha-sig.figma.com/img/b8c2/88d8/93209fd0daa950a4c041b008ff69631e?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lAkM8mG-4An4jp~Ulbbqsd~7p2R~o543N~B2ghMz~ee7obToxECBX2Mhj-G7oSBrFZfQwgNAHE3KQwza7fsjnwyxi~~rff77uq04Xzth-J5L7gUFY1VIcCdkYNFMlg3yFV718UqZq7QehOoxWXIQbH1k57N3jLaW9ZRJQBxqhpSWt6NZ4Ecf9SIGhYY8WQioL2k1bZsp004vn5QBqpaxAwXu7bOBLOmfI~XDSEZFEMm3G5hRH0rvKVnI7YXwI9Y50Ym82gbBZ~cwmnkq6sM5Qi477rM5H~fYGa~e-m7~7Hrixof6M2WEkmH0Yt5ETl4QdBi0qTyyUyuKXbQ8JfN5Bg__"
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg1e0v8sUYOHvd0qs3rA6PUvdVt_hjPXeYWKmsSJ1YgJVU8M6KnpJrQuJ_rlr7J66Ho4_P-uoi3dgrvJgZhejzeiu07r2LF9qazm-VKDxmF4RTZ7BFj9U_xwnvxZbp_mo0pTanRLDGxgozj_CzeubalwAPfXPAalwz_dZZGrZTdfC8hn4NQOSKCycKvKFs"
                                 alt="">
                             <svg width="125" height="169" viewBox="0 0 125 169" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -543,6 +634,21 @@
 
                         <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjNXWE-IigtUkiT4iGo3aexMIeH9CwnNhwIpX5RFu7nAlOS2r9gamTdEuXG62dzUoMEuBPTOhGPCzF91ImiTofH8a56iUUjqJQAWbt-NV2BpTluYGHYk2KJ8Pc3d7HEKS_e7AjjcrqsRU1_pfn1xTPQ2mrnz80Kh32QbQtxZUmOQZMztXbh7zVyyZ-1wxw"
                             alt="">
+
+                        <svg width="35" height="56" viewBox="0 0 35 56" fill="none" class="plugers"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 0.00012207C14.4641 0.00012207 14.9092 0.184497 15.2374 0.512685C15.5656 0.840874 15.75 1.28599 15.75 1.75012V10.5001H26.25V1.75012C26.25 1.28599 26.4344 0.840874 26.7626 0.512685C27.0907 0.184497 27.5359 0.00012207 28 0.00012207C28.4641 0.00012207 28.9093 0.184497 29.2374 0.512685C29.5656 0.840874 29.75 1.28599 29.75 1.75012V10.5001H33.25C33.7141 10.5001 34.1592 10.6845 34.4874 11.0127C34.8156 11.3409 35 11.786 35 12.2501V22.7501C35 25.999 33.7094 29.1149 31.4121 31.4122C29.1147 33.7095 25.9989 35.0001 22.75 35.0001C22.743 36.5191 22.715 37.9576 22.61 39.2701C22.4665 41.0691 22.169 42.7806 21.5005 44.2541C20.8235 45.813 19.6224 47.0858 18.1055 47.8521C16.5375 48.6501 14.5915 49.0001 12.25 49.0001C8.757 49.0001 6.615 50.1551 5.341 51.5131C4.19018 52.7275 3.53372 54.3274 3.5 56.0001H0C0 53.8441 0.812 51.2156 2.7895 49.1121C4.809 46.9701 7.9135 45.5001 12.25 45.5001C14.2835 45.5001 15.617 45.1921 16.513 44.7336C17.3565 44.3031 17.913 43.6836 18.312 42.8086C18.7355 41.8776 18.9875 40.6351 19.117 38.9936C19.2115 37.8036 19.2395 36.4806 19.2465 35.0001C15.9982 34.9992 12.8833 33.7082 10.5867 31.4109C8.29014 29.1137 7 25.9984 7 22.7501V12.2501C7 11.786 7.18437 11.3409 7.51256 11.0127C7.84075 10.6845 8.28587 10.5001 8.75 10.5001H12.25V1.75012C12.25 1.28599 12.4344 0.840874 12.7626 0.512685C13.0908 0.184497 13.5359 0.00012207 14 0.00012207ZM10.5 14.0001V22.7501C10.5 25.0708 11.4219 27.2964 13.0628 28.9373C14.7038 30.5782 16.9294 31.5001 19.25 31.5001H22.75C25.0706 31.5001 27.2962 30.5782 28.9372 28.9373C30.5781 27.2964 31.5 25.0708 31.5 22.7501V14.0001H10.5Z"
+                                fill="#CA0928" />
+                        </svg>
+
+                        <svg width="35" height="56" viewBox="0 0 35 56" fill="none" class="plugers2"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 0.00012207C14.4641 0.00012207 14.9092 0.184497 15.2374 0.512685C15.5656 0.840874 15.75 1.28599 15.75 1.75012V10.5001H26.25V1.75012C26.25 1.28599 26.4344 0.840874 26.7626 0.512685C27.0907 0.184497 27.5359 0.00012207 28 0.00012207C28.4641 0.00012207 28.9093 0.184497 29.2374 0.512685C29.5656 0.840874 29.75 1.28599 29.75 1.75012V10.5001H33.25C33.7141 10.5001 34.1592 10.6845 34.4874 11.0127C34.8156 11.3409 35 11.786 35 12.2501V22.7501C35 25.999 33.7094 29.1149 31.4121 31.4122C29.1147 33.7095 25.9989 35.0001 22.75 35.0001C22.743 36.5191 22.715 37.9576 22.61 39.2701C22.4665 41.0691 22.169 42.7806 21.5005 44.2541C20.8235 45.813 19.6224 47.0858 18.1055 47.8521C16.5375 48.6501 14.5915 49.0001 12.25 49.0001C8.757 49.0001 6.615 50.1551 5.341 51.5131C4.19018 52.7275 3.53372 54.3274 3.5 56.0001H0C0 53.8441 0.812 51.2156 2.7895 49.1121C4.809 46.9701 7.9135 45.5001 12.25 45.5001C14.2835 45.5001 15.617 45.1921 16.513 44.7336C17.3565 44.3031 17.913 43.6836 18.312 42.8086C18.7355 41.8776 18.9875 40.6351 19.117 38.9936C19.2115 37.8036 19.2395 36.4806 19.2465 35.0001C15.9982 34.9992 12.8833 33.7082 10.5867 31.4109C8.29014 29.1137 7 25.9984 7 22.7501V12.2501C7 11.786 7.18437 11.3409 7.51256 11.0127C7.84075 10.6845 8.28587 10.5001 8.75 10.5001H12.25V1.75012C12.25 1.28599 12.4344 0.840874 12.7626 0.512685C13.0908 0.184497 13.5359 0.00012207 14 0.00012207ZM10.5 14.0001V22.7501C10.5 25.0708 11.4219 27.2964 13.0628 28.9373C14.7038 30.5782 16.9294 31.5001 19.25 31.5001H22.75C25.0706 31.5001 27.2962 30.5782 28.9372 28.9373C30.5781 27.2964 31.5 25.0708 31.5 22.7501V14.0001H10.5Z"
+                            fill="#CA0928" />
+                    </svg>
+
                     </div>
 
                 </div>
@@ -558,11 +664,11 @@
 
                         <p>Here’s how to get started:</p>
 
-                        <ol>
-                            <li>Complete your profile to attract more clients.</li>
-                            <li>Add your services and set your pricing.</li>
-                            <li>Explore the dashboard for tools to manage orders and earnings.</li>
-                        </ol>
+                        <ul>
+                            <li><span>1.</span> Complete your profile to attract more clients.</li>
+                            <li><span>2.</span> Add your services and set your pricing.</li>
+                            <li><span>3.</span>Explore the dashboard for tools to manage orders and earnings.</li>
+                        </ul>
 
                         <p>If you have any questions we’re just a click away at [Support@Prosplug.com] Lets achieve
                             great things together!</p>
@@ -623,13 +729,15 @@
 
                         <div class="download_buttons">
                             <a href="https://play.google.com/store" class="play-store-button" target="_blank">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                    alt="Download on Google Play">
                             </a>
                             <a href="https://www.apple.com/app-store/" class="app-store-button" target="_blank">
-                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="Download on the App Store">
                             </a>
                         </div>
-                        
+
 
                     </div>
 
